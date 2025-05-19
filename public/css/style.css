@@ -1,0 +1,231 @@
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1644px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 150px;
+}
+.logo img {
+  width: 100%;
+}
+
+.header-top {
+  background-color: #038468;
+  text-align: center;
+  padding: 8px 0;
+}
+.header-top .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header-top .text a {
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+}
+.header-top .text a:hover {
+  letter-spacing: 3px;
+}
+.header__wrp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.header-main {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+.header-main .menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-main .menu li a {
+  font-weight: 500;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.header-main .menu li a:hover {
+  color: #038468;
+}
+.header-main .info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-main .info button {
+  display: inline-block;
+  padding: 2px;
+  font-size: 20px;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.header-main .info button:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+}
+.header-main .info button:hover {
+  color: #038468;
+  transform: scale(1.1);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title .title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.section-title .view-all-btn {
+  display: inline-block;
+  color: var(--heading-color);
+  text-decoration: underline;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.section-title .view-all-btn:hover {
+  color: #038468;
+  text-decoration: none;
+}
+
+.banner-area {
+  overflow: hidden;
+}
+.banner__image {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.banner__image img {
+  width: 100%;
+}
+
+.single-banner .image {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.single-banner .image img {
+  width: 100%;
+}
+
+.dual-banner .image {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.dual-banner .image img {
+  width: 100%;
+}
+
+.product-area {
+  overflow: hidden;
+}
+.product__card {
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product__card .image {
+  display: block;
+  overflow: hidden;
+}
+.product__card .image img {
+  width: 100%;
+  transition: 0.7s;
+}
+.product__card .content {
+  padding: 10px 20px;
+}
+.product__card .content .title {
+  font-size: 18px;
+}
+.product__card .content .title a {
+  transition: all 0.3s ease-in-out;
+}
+.product__card .content .title a:hover {
+  color: #038468;
+}
+.product__card .content .price {
+  color: #777777;
+  font-weight: 500;
+}
+.product__card:hover .image img {
+  transform: scale(1.1);
+}
+
+.footer-area {
+  overflow: hidden;
+  background-color: #222222;
+}
+.footer-widget {
+  padding: 40px 0;
+}
+.footer-widget .widget-item .title {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer-widget .widget-item .widget-link li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.footer-widget .widget-item .widget-link li a {
+  color: #919191;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.footer-widget .widget-item .widget-link li a:hover {
+  color: #ffffff;
+}
+.footer-widget .widget-item .text {
+  color: #919191;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.footer-widget .widget-item .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-widget .widget-item .social-icons a {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.footer-widget .widget-item .social-icons a:hover {
+  color: #038468;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.footer-bottom .text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.footer-bottom .text a {
+  color: #038468;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

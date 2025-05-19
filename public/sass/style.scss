@@ -1,0 +1,280 @@
+// Variables ***
+$primary-color: #038468;
+$secondary-color: #222222;
+$text-color: #777777;
+$white-color: #ffffff;
+$black-color: #000000;
+
+$border: #f1f1f1;
+$transition: all 0.3s ease-in-out;
+
+// Custom class start here ***
+.container {
+	@media screen and (min-width: 1400px) {
+		max-width: 1644px;
+	}
+}
+// Custom class end here ***
+
+// Header area start here ***
+.logo {
+	display: block;
+	width: 150px;
+	img {
+		width: 100%;
+	}
+}
+.header {
+	&-top {
+		background-color: $primary-color;
+		text-align: center;
+		padding: 8px 0;
+		.text {
+			font-size: 14px;
+			line-height: 20px;
+			color: $white-color;
+			letter-spacing: 1px;
+			font-weight: 500;
+			text-transform: uppercase;
+			a {
+				font-weight: 400;
+				text-transform: capitalize;
+				text-decoration: underline;
+				color: $white-color;
+				font-weight: 700;
+				transition: $transition;
+				letter-spacing: 2px;
+				&:hover {
+					letter-spacing: 3px;
+				}
+			}
+		}
+	}
+	&__wrp {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		justify-content: space-between;
+	}
+	&-main {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 10px 0;
+		.menu {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			li {
+				a {
+					font-weight: 500;
+					padding: 20px;
+					transition: $transition;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+		.info {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			button {
+				display: inline-block;
+				padding: 2px;
+				font-size: 20px;
+				line-height: 20px;
+				&:first-child {
+					border-right: 1px solid rgba(0, 0, 0, 0.1);
+					padding-right: 20px;
+				}
+				transition: $transition;
+				&:hover {
+					color: $primary-color;
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+// Header area end here ***
+
+// Section title start here ***
+.section-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.title {
+		font-size: 24px;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+	.view-all-btn {
+		display: inline-block;
+		color: var(--heading-color);
+		text-decoration: underline;
+		font-weight: 500;
+		text-transform: capitalize;
+		&:hover {
+			color: $primary-color;
+			text-decoration: none;
+		}
+	}
+}
+// Section title end here ***
+
+// Banner area start here ***
+.banner {
+	&-area {
+		overflow: hidden;
+	}
+	&__image {
+		display: block;
+		overflow: hidden;
+		border-radius: 8px;
+		img {
+			width: 100%;
+		}
+	}
+}
+// Banner area end here ***
+
+// Single Banner area start here ***
+.single-banner {
+	.image {
+		display: block;
+		overflow: hidden;
+		border-radius: 8px;
+		img {
+			width: 100%;
+		}
+	}
+}
+// Single Banner area end here ***
+
+// Dual Banner area start here ***
+.dual-banner {
+	.image {
+		display: block;
+		overflow: hidden;
+		border-radius: 8px;
+		img {
+			width: 100%;
+		}
+	}
+}
+// Dual Banner area end here ***
+
+// Product area start here ***
+.product {
+	&-area {
+		overflow: hidden;
+	}
+	&__card {
+		border: 1px solid $border;
+		border-radius: 8px;
+		overflow: hidden;
+		.image {
+			display: block;
+			overflow: hidden;
+			img {
+				width: 100%;
+				transition: 0.7s;
+			}
+		}
+		.content {
+			padding: 10px 20px;
+			.title {
+				font-size: 18px;
+				a {
+					transition: $transition;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+			.price {
+				color: $text-color;
+				font-weight: 500;
+			}
+		}
+		&:hover {
+			.image {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+// Product area end here ***
+
+// Footer area start here ***
+.footer {
+	&-area {
+		overflow: hidden;
+		background-color: $secondary-color;
+	}
+	&-widget {
+		padding: 40px 0;
+		.widget-item {
+			.title {
+				color: $white-color;
+				margin-bottom: 10px;
+				font-size: 18px;
+			}
+			.widget-link {
+				li {
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+					a {
+						color: #919191;
+						font-size: 15px;
+						line-height: 20px;
+						transition: $transition;
+						&:hover {
+							color: $white-color;
+						}
+					}
+				}
+			}
+			.text {
+				color: #919191;
+				margin-bottom: 0;
+				font-size: 15px;
+			}
+			.social-icons {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-top: 20px;
+				a {
+					color: $white-color;
+					transition: $transition;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+	&-bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 10px 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		justify-content: space-between;
+		.text {
+			font-size: 14px;
+			color: rgba(255, 255, 255, 0.8);
+			text-transform: capitalize;
+			margin-bottom: 0;
+			a {
+				color: $primary-color;
+				font-weight: 500;
+			}
+		}
+	}
+}
+// Footer area end here ***

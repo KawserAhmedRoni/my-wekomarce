@@ -1,0 +1,128 @@
+/* Import styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+	--font-body: "Poppins", sans-serif;
+	--font-title: "Poppins", sans-serif;
+	--main-bg: #fff;
+	--heading-color: #222;
+	--paragraph: #777;
+	--span: #007bff;
+	--transition: all 0.3s ease-in-out;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-body);
+	color: var(--paragraph);
+	background-color: var(--main-bg);
+	line-height: 28px;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: var(--heading-color);
+	font-family: var(--font-title);
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+span {
+	display: inline-block;
+	color: var(--span);
+}
+
+.splt-txt {
+	span {
+		color: unset;
+	}
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: var(--heading-color);
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--heading-color);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+figure {
+	margin: 0;
+}
