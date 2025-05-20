@@ -1,5 +1,6 @@
 import BannerSlider from "./components/banner/BannerSlider";
 import SingleBannerSlider from "./components/banner/SingleBannerSlider";
+import CategoryCard from "./components/category/CategoryCard";
 import ProductCard from "./components/product/ProductCard";
 
 export default function Home() {
@@ -8,6 +9,34 @@ export default function Home() {
 			<section className="banner-area pt-3">
 				<div className="container-fluid">
 					<BannerSlider />
+				</div>
+			</section>
+
+			<section className="category-area pt-5">
+				<div className="container">
+					<div className="section-title justify-content-center mb-4">
+						<h2 className="title">Trending Categories</h2>
+					</div>
+					<div className="row g-4">
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+						<div className="col-lg-2">
+							<CategoryCard />
+						</div>
+					</div>
 				</div>
 			</section>
 

@@ -14,6 +14,9 @@ $transition: all 0.3s ease-in-out;
 		max-width: 1644px;
 	}
 }
+.offcanvas-backdrop {
+	cursor: url("/images/icon/x.png") 16 16, auto;
+}
 // Custom class end here ***
 
 // Header area start here ***
@@ -164,6 +167,56 @@ $transition: all 0.3s ease-in-out;
 }
 // Dual Banner area end here ***
 
+// Category area start here ***
+.category {
+	&-area {
+		overflow: hidden;
+	}
+	&__card {
+		overflow: hidden;
+		text-align: center;
+		.image {
+			display: block;
+			overflow: hidden;
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+			margin: 0 auto;
+			
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: 0.7s;
+			}
+		}
+		.content {
+			.title {
+				font-size: 18px;
+				margin-top: 10px;
+				a {
+					transition: $transition;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+			.price {
+				color: $text-color;
+				font-weight: 500;
+			}
+		}
+		&:hover {
+			.image {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+// Category area end here ***
+
 // Product area start here ***
 .product {
 	&-area {
@@ -207,6 +260,16 @@ $transition: all 0.3s ease-in-out;
 	}
 }
 // Product area end here ***
+
+// Shop page area start here ***
+.shop-page {
+	.top-bar{
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+	}
+}
+// Shop page area end here ***
 
 // Footer area start here ***
 .footer {
