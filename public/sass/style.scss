@@ -182,7 +182,7 @@ $transition: all 0.3s ease-in-out;
 			height: 220px;
 			border-radius: 50%;
 			margin: 0 auto;
-			
+
 			img {
 				width: 100%;
 				height: 100%;
@@ -263,10 +263,45 @@ $transition: all 0.3s ease-in-out;
 
 // Shop page area start here ***
 .shop-page {
-	.top-bar{
+	.top-bar {
 		display: flex;
 		gap: 20px;
 		justify-content: space-between;
+		.filter-btn {
+			display: flex;
+			font-size: 20px;
+			font-weight: 500;
+			align-items: center;
+			gap: 5px;
+		}
+		.short {
+			width: 250px;
+			select {
+				width: 100%;
+				height: 42px;
+				border-radius: 5px;
+				border: 1px solid #e1e1e1;
+				padding: 8px;
+				font-size: 14px;
+				font-weight: 500;
+				cursor: pointer;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+.shop-details {
+	&-page {
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		
+.container {
+	@media screen and (min-width: 1400px) {
+		max-width: 1174px;
+	}
+}
 	}
 }
 // Shop page area end here ***

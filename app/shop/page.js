@@ -8,7 +8,7 @@ export default function Shop() {
 			<div className="shop-page py-5">
 				<div className="container">
 					<div className="top-bar mb-4">
-						<button
+						<button className="filter-btn"
 							aria-label="Filter"
 							data-bs-toggle="offcanvas"
 							data-bs-target="#filterDrawer"

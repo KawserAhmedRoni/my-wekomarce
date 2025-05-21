@@ -217,6 +217,39 @@
   gap: 20px;
   justify-content: space-between;
 }
+.shop-page .top-bar .filter-btn {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  gap: 5px;
+}
+.shop-page .top-bar .short {
+  width: 250px;
+}
+.shop-page .top-bar .short select {
+  width: 100%;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.shop-details-page {
+  overflow: hidden;
+}
+.shop-details-page img {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  .shop-details-page .container {
+    max-width: 1174px;
+  }
+}
 
 .footer-area {
   overflow: hidden;

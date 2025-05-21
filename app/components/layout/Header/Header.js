@@ -27,7 +27,7 @@ export default function Header() {
 						</div>
 						<ul className="menu">
 							<li>
-								<Link href="/">Home</Link>
+								<Link href="/shop">Shop</Link>
 							</li>
 							<li>
 								<Link href="/women">Women</Link>
